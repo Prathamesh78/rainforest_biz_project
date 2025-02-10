@@ -1,0 +1,39 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: Order_ID
+    type: integer
+    nullable: true
+    metadata:
+      description: Unique identifier for each order placed
+      mappings: []
+      tags: []
+  - name: Customer_ID
+    type: integer
+    nullable: true
+    metadata:
+      description: Unique identifier for the customer placing the order
+      mappings: []
+      tags: []
+  - name: Product
+    type: string
+    nullable: true
+    metadata:
+      description: Name of the product ordered
+      mappings: []
+      tags: []
+  - name: Quantity
+    type: integer
+    nullable: true
+    metadata:
+      description: The number of units ordered for the product
+      mappings: []
+      tags: []
+  - name: Price
+    type: integer
+    nullable: true
+    metadata:
+      description: The cost of the product ordered
+      mappings: []
+      tags: []

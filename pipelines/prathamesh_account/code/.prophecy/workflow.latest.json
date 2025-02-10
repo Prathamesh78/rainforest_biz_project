@@ -1,0 +1,464 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.8.0",
+        "pyPiVersion" : "1.9.33"
+      },
+      "sparkConfigJinjaEnabled" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/prathamesh_account",
+    "sourceSuggestions" : [ ],
+    "pipelineSettingsInfo" : {
+      "applicationName" : "prathamesh_account",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true,
+      "isNullValuesInUnitTestsEnabled" : true,
+      "sparkConfigOptions" : {
+        "disableSparkCreationTimeConfigGeneration" : true
+      }
+    },
+    "language" : "python",
+    "fabricId" : "21919",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "prathameshsawantinfoceptscomteam.rainforestbizproject.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "courselabs.courselabsources.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ {
+      "name" : "spark.default.parallelism",
+      "value" : "4"
+    }, {
+      "name" : "spark.sql.legacy.allowUntypedScalaUDF",
+      "value" : "true"
+    } ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "13587",
+      "projectName" : "course_lab_sources",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "prathamesh_account",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "YmOnO0xoG00cpNQb6d3Nu",
+    "source" : "FS5mvkKgatxDLWNMKbUCk$$xMDxp_dabeTL8g85X7fo0",
+    "sourcePort" : "4NbbQiVX1nvcHJNJ6oNVc$$Zlkzj2yNl14XIB5jBfP8E",
+    "target" : "sW-JlSUzClC1sC4Qg7vL9$$NXESS9ikcGooMhS1Nicld",
+    "targetPort" : "d2Hr7Noe6qEGi8IeGhAim$$DiNmyFzfax6gDMSoB6HEu"
+  }, {
+    "id" : "QdowrqLZy5tcsNSITJoiI",
+    "source" : "FS5mvkKgatxDLWNMKbUCk$$xMDxp_dabeTL8g85X7fo0",
+    "sourcePort" : "4NbbQiVX1nvcHJNJ6oNVc$$Zlkzj2yNl14XIB5jBfP8E",
+    "target" : "3r52lVUH0J07Z_NEKXhxo$$Z5wb7Bqz9-hV52qd12oFQ",
+    "targetPort" : "5uTrMN6Cg_h-J5nFnUgd5$$luk7I5Hkv45NnONHgZEwc"
+  }, {
+    "id" : "n_OSyx0P57P65w49Xdn4X",
+    "source" : "U12j0B0SeOAjS4itg_YlY$$imYb3Ez5UFm2mOBZNSHw7",
+    "sourcePort" : "IhZ_gPbg8l1-M0gEMB9ur$$fqlOrz0LEGLsvpWAqpZE_",
+    "target" : "3r52lVUH0J07Z_NEKXhxo$$Z5wb7Bqz9-hV52qd12oFQ",
+    "targetPort" : "jYviJXfoiwe3SlIBz66YC$$BhtTek_iF6pJiYnw1SV4g"
+  } ],
+  "processes" : {
+    "FS5mvkKgatxDLWNMKbUCk$$xMDxp_dabeTL8g85X7fo0" : {
+      "id" : "FS5mvkKgatxDLWNMKbUCk$$xMDxp_dabeTL8g85X7fo0",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "test_01",
+        "slug" : "test_01",
+        "x" : -1800,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "4NbbQiVX1nvcHJNJ6oNVc$$Zlkzj2yNl14XIB5jBfP8E",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/test_01"
+      }
+    },
+    "U12j0B0SeOAjS4itg_YlY$$imYb3Ez5UFm2mOBZNSHw7" : {
+      "id" : "U12j0B0SeOAjS4itg_YlY$$imYb3Ez5UFm2mOBZNSHw7",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Orders",
+        "slug" : "Orders",
+        "x" : -1800,
+        "y" : -40,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "IhZ_gPbg8l1-M0gEMB9ur$$fqlOrz0LEGLsvpWAqpZE_",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Orders"
+      }
+    },
+    "sW-JlSUzClC1sC4Qg7vL9$$NXESS9ikcGooMhS1Nicld" : {
+      "id" : "sW-JlSUzClC1sC4Qg7vL9$$NXESS9ikcGooMhS1Nicld",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "age_statistics_by_city",
+        "slug" : "age_statistics_by_city",
+        "x" : -1540,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Analyzes age demographics by city, providing insights into the maximum, minimum, and average ages of residents.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "d2Hr7Noe6qEGi8IeGhAim$$DiNmyFzfax6gDMSoB6HEu",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Customer_ID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Unique identifier for each customer",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "First_Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The first name of the customer",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Last_Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The last name of the customer",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Age",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The age of the customer",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "City",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The city where the customer resides",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "7Yzj5pG5-ZIIf6VHXo_WB$$c8xNn_iwNuW0G1hyPvxke",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "Max_Age",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "max(Age)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Min_Age",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "min(Age)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Avg_Age",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "avg(Age)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "d2Hr7Noe6qEGi8IeGhAim$$DiNmyFzfax6gDMSoB6HEu##Age", "d2Hr7Noe6qEGi8IeGhAim$$DiNmyFzfax6gDMSoB6HEu##City" ],
+        "groupBy" : [ {
+          "target" : "City",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "City"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.40&projectSubscriptionProjectId=12654&path=gems/Aggregate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "3r52lVUH0J07Z_NEKXhxo$$Z5wb7Bqz9-hV52qd12oFQ" : {
+      "id" : "3r52lVUH0J07Z_NEKXhxo$$Z5wb7Bqz9-hV52qd12oFQ",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "inner_join_by_customer_id",
+        "slug" : "inner_join_by_customer_id",
+        "x" : -1460,
+        "y" : -20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Combines customer data from two sources based on customer IDs to create a unified view of customer information.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5uTrMN6Cg_h-J5nFnUgd5$$luk7I5Hkv45NnONHgZEwc",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Customer_ID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Unique identifier for each customer",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "First_Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The first name of the customer",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Last_Name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The last name of the customer",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Age",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The age of the customer",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "City",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The city where the customer resides",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "jYviJXfoiwe3SlIBz66YC$$BhtTek_iF6pJiYnw1SV4g",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Order_ID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Unique identifier for each order placed",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Customer_ID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Unique identifier for the customer placing the order",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Product",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Name of the product ordered",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Quantity",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The number of units ordered for the product",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Price",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The cost of the product ordered",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "alwtcgXkbibZ_WsIrIeL1$$dEzE5vOtj0uLMfc9RdKLD",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.Customer_ID = in1.Customer_ID "
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ ],
+        "hints" : [ {
+          "id" : "5uTrMN6Cg_h-J5nFnUgd5$$luk7I5Hkv45NnONHgZEwc",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "jYviJXfoiwe3SlIBz66YC$$BhtTek_iF6pJiYnw1SV4g",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "conditions",
+        "columnsSelector" : [ "5uTrMN6Cg_h-J5nFnUgd5$$luk7I5Hkv45NnONHgZEwc##Customer_ID", "jYviJXfoiwe3SlIBz66YC$$BhtTek_iF6pJiYnw1SV4g##Customer_ID" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.40&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}
